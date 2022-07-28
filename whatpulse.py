@@ -10,6 +10,9 @@ else:
     keys = result["Keys"]
     clicks = result["Clicks"]
     usernameresult =result["AccountName"]
+    download =result["Download"]
+    upload =result["Upload"]
+    uptime =result["UptimeLong"]
 
 
     print("""
@@ -21,5 +24,12 @@ else:
     ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚══════╝╚══════╝
                                                                              """)
     print("Stats for {}".format (usernameresult))
+    print("")
+    print("Input Stats:")
     print("{} Keys, {} Clicks ".format(keys, clicks))
-
+    print('')
+    print('Network Stats')
+    print("{} Download, {} Upload".format(download, upload))
+    print('')
+    print('Uptime Stats')
+    print('{} Uptime'.format(uptime))
