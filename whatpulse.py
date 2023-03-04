@@ -33,3 +33,4 @@ else:
     print('')
     print('Uptime Stats')
     print('{} Uptime'.format(uptime))
+    input()
